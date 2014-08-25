@@ -9,7 +9,7 @@ To add the Aseba Tap to your homebrew installation:
 brew tap stephanemagnenat/aseba
 ```
 
-Then install aseba:
+Then install Aseba:
 
 ```sh
 brew install aseba
