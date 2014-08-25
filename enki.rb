@@ -9,7 +9,7 @@ class Enki < Formula
   depends_on "qt"
   depends_on "sdl"
   depends_on :python => :optional
-  depends_on :boost => "with-python"
+  depends_on "boost" => "with-python"
 
   def install
     system "cmake", ".", *std_cmake_args, "-DPYTHON_CUSTOM_TARGET=#{prefix}/lib/python2.7/site-packages"
