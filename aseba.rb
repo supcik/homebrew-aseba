@@ -6,6 +6,10 @@ class Aseba < Formula
   sha1 "023ade01c6d859f4e97a90546bc6f5de3adf6ebb"
   head "https://github.com/aseba-community/aseba.git"
 
+  head do
+    depends_on "protobuf"
+  end
+  
   depends_on "cmake" => :build
   depends_on "qt"
   depends_on "qwt"
