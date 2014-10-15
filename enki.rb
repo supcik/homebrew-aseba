@@ -12,7 +12,7 @@ class Enki < Formula
   depends_on "boost" => "with-python"
 
   def install
-    system "cmake", ".", *std_cmake_args, "-DPYTHON_CUSTOM_TARGET=#{prefix}/lib/python2.7/site-packages"
+    system "cmake", ".", "-DPYTHON_CUSTOM_TARGET=#{prefix}/lib/python2.7/site-packages", *std_cmake_args
     system "make", "install"
     (share+"test").install "examples/enkiTest"
   end
