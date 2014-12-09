@@ -15,6 +15,7 @@ class Aseba < Formula
   depends_on "qwt"
   depends_on "dashel"
   depends_on "enki"
+  depends_on "d-bus" => :recommended
 
   def install
     system "cmake", ".", *std_cmake_args
