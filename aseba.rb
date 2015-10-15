@@ -3,6 +3,7 @@ require "formula"
 class Aseba < Formula
   homepage "http://aseba.wikidot.com"
   url "https://github.com/supcik/aseba.git", :branch => "dev"
+  version "1.4.00.bmc0"
 
   depends_on "protobuf"
   depends_on "cmake" => :build
